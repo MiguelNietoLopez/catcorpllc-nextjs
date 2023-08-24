@@ -1,8 +1,7 @@
 import './globals.css'
 import type { Metadata } from 'next';
-import './header';
-import './footer';
-
+import Header from './header';
+import Footer from './footer';
 export const metadata: Metadata = {
   title: 'CatcorpLLC',
   description: 'Number 1 Software Development Firm Ran by Cats',
@@ -15,8 +14,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-  
-      <body>{children}</body>
+      <body>
+        <Header />
+        {children}
+        <Footer/>
+      </body>
     </html>
   )
 }
