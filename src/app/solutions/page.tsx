@@ -16,14 +16,14 @@ import React from 'react';
         */
 export default function SolutionsApp() {
         const [devArrayPos, setdevArrayPos] = React.useState(0);
-        const [devArray, setDevArray] = React.useState([
+        const devArray = [
             {                
                 name: "Greg G. Gregson", title: "Senior Web Developer", desc: "Greg G. Gregson has 12 years developing Web based projects. He personally helped develop React, Vue, and many other javascript frameworks used today.", imgSrc: greggregorygregson 
             },
             {
                 name: "Peanut", title: "Senior Web Developer", desc: "has designed and maintained multiple websites dedicated to centralizing intelligence on different areas around revolutionary thinkers and their day to day routines and life. His hobbies include puzzles and gardening", imgSrc: peanut
             }
-        ])
+        ];
         const updateDevPos = (num : Number) => {
             switch (num){
                 case 0:
