@@ -13,7 +13,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth snap-y snap-mandatory snap-normal">
       <body>
         <Header></Header>
         {children}
